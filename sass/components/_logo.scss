@@ -1,0 +1,24 @@
+.logo {
+    @extend %link;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $accent-color;
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.logo__part-white {
+    color: $main-title-color;
+}
+.logo__part-black {
+    color: $main-color;
+}
+
+.logo--footer {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}

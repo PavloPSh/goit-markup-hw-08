@@ -1,0 +1,22 @@
+.third-main {
+    @extend %section;
+    padding-top: 0px;
+}
+.container {
+    @extend %container;
+}
+
+.third-main__title {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: $main-color;
+    margin-bottom: 50px;
+}
+.third-main__list {
+    @extend %list;
+    display: flex;
+}
+.third-main__item:not(:last-child) {
+    margin-right: 30px;
+}

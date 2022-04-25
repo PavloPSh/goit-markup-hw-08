@@ -1,0 +1,41 @@
+.second-main {
+    @extend %section;
+}
+.container{
+    @extend %container;
+}
+.second-main__list {
+    @extend %list;
+    display: flex;
+}    
+.second-main__title {
+    display: none;
+}
+.second-main__item-title {
+    margin-bottom: 10px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $main-color;
+}
+.second-main__item:not(:last-child) {
+    margin-right: 30px;
+}
+.second-main__icons-list {
+    @extend %list;
+    display: flex;
+    margin-bottom: 30px;
+}
+.second-main__icons-item {
+    background-color: $second-background-color;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.second-main__item-text {
+    line-height: 1.71;
+    color: $regular-text-color; 
+}
