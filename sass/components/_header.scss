@@ -4,40 +4,31 @@
     border-bottom-color: #ECECEC;
 }
 .header__container {
-    @extend %container;
-    display: flex;
-} 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+}
+@media screen and (max-width: 767px) {
+    .header {
+        position: relative;
+    }
+    .header__contacts-list {
+        display: none;
+    }
+    
+}
+
+// tablet
+
 .header__contacts-list {
     @extend %list;
-    display: flex;
-    margin-left: auto;
-}
-.header__contacts-item{
-    display: flex;
-    &:not(:first-child) {
-        margin-left: 50px;
-    }
-}
-.header__contacts-icon{
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    fill: currentColor;
-}
-.header__contacts-icon-smartphone {
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    fill: currentColor;
 }
 .header__contacts-link {
     @extend %link;
-    padding-top: 32px;
-    padding-bottom: 32px;
     display: flex;
     align-items: center;
     font-weight: 500;
-    line-height: 1.14 ;
+    line-height: 14px ;
     letter-spacing: 0.02em;
     color: $regular-text-color;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -45,4 +36,72 @@
     &:focus {
         color: $accent-color;
     }
+    font-size: 12px;
 }
+.header__contacts-item{
+    display: flex;
+    &:not(:last-child){
+        margin-bottom: 10px;
+    }
+}
+.header__contacts-icon{
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+    fill: currentColor;
+}
+.header__contacts-icon-smartphone {
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+    fill: currentColor;
+}
+
+
+
+// desktop
+
+
+// .header__container {
+//     @extend %container;
+//     display: flex;
+// } 
+// .header__contacts-list {
+//     @extend %list;
+//     display: flex;
+//     margin-left: auto;
+// }
+// .header__contacts-item{
+//     display: flex;
+//     &:not(:first-child) {
+//         margin-left: 50px;
+//     }
+// }
+// .header__contacts-icon{
+//     width: 16px;
+//     height: 12px;
+//     margin-right: 10px;
+//     fill: currentColor;
+// }
+// .header__contacts-icon-smartphone {
+//     width: 10px;
+//     height: 16px;
+//     margin-right: 10px;
+//     fill: currentColor;
+// }
+// .header__contacts-link {
+//     @extend %link;
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+//     display: flex;
+//     align-items: center;
+//     font-weight: 500;
+//     line-height: 1.14 ;
+//     letter-spacing: 0.02em;
+//     color: $regular-text-color;
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     &:hover,
+//     &:focus {
+//         color: $accent-color;
+//     }
+// }

@@ -27,7 +27,7 @@ textarea {
     outline: none;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__input:focus {
+.form__input:focus-within {
     border: 1px solid $accent-color;
 }
 .form__item textarea {
@@ -44,17 +44,18 @@ textarea {
     margin-bottom: 20px;
 }
 .form__item label {
-    color: #757575;
+    color: $regular-text-color;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
     margin-bottom: 4px;
     cursor: pointer;
 }
+
 .form__title{
     font-size: 20px;
     font-weight: 700;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     color: $main-color;
@@ -67,8 +68,8 @@ textarea {
     margin-bottom: 30px;
 }
 .form__checkbox label {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     color: $regular-text-color;
     
@@ -138,3 +139,24 @@ textarea {
     background-image: url(../images/svg/icon-check.svg);
     outline: none;
 }
+
+
+// dsktop
+
+// .form__checkbox label {
+//     font-size: 14px;
+//     line-height: 1.71;
+//     letter-spacing: 0.03em;
+//     color: $regular-text-color;
+    
+// }
+
+// .form__title{
+//     font-size: 20px;
+//     font-weight: 700;
+//     line-height: 1.15;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     color: $main-color;
+//     margin-bottom: 12px;
+// }
