@@ -141,7 +141,23 @@ textarea {
 }
 
 
+// tablet
+
+
+
+
+
 // dsktop
+@media screen and (min-width:1200px) {
+    .form__checkbox label {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+}
+
+
+
 
 // .form__checkbox label {
 //     font-size: 14px;

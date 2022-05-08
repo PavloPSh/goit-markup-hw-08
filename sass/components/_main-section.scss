@@ -62,7 +62,26 @@
 
 // desktop
 
+@media screen and (min-width:769px) {
+    .main-section {
+        background-image: url(../images/desk-main-bg.jpg);
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/desk-main-bg@2x.jpg);
+        }
+    }
+}
 
+@media screen and (min-width: 1200px) {
+    .main-section {
+        padding: 200px 0;
+    }
+    .main-section__title {
+        font-size: 44px;
+        line-height: 1.36;
+    }
+}
 
 
 

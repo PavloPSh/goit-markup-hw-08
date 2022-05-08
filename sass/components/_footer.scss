@@ -46,9 +46,12 @@
     }
 }
 
-.footer__social {
-    margin-top: 60px;
+@media screen and (max-width: 767px) {
+    .footer__social {
+        margin-top: 60px;
+    }
 }
+
 
 .footer__social-text {
     font-size: 14px;
@@ -56,9 +59,11 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    text-align: center;
     color: $main-title-color;
     margin-bottom: 20px;
+    @media screen and (max-width:1199px) {
+        text-align: center;
+    }
 }
 
 .footer__social-list {
@@ -97,7 +102,9 @@
 }
 
 .footer__form {
-    margin-top: 60px;
+    @media screen and (max-width: 1199px) {
+        margin-top: 60px;
+    }
 }
 
 .footer__form-title {
@@ -105,16 +112,21 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    text-align: center;
     text-transform: uppercase;
     color: $main-title-color;
     margin-bottom: 20px;
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
 }
 
 .footer__form-block {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    @media screen and (max-width: 1199px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }
 
 .footer__input {
@@ -130,7 +142,9 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 20px;
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
 }
 
 .footer__form-button {
@@ -156,6 +170,53 @@
 .footer__icon-telegramm{
     margin-left: 10px;
 }
+
+
+// tablet 
+
+
+@media screen and (min-width: 768px) {
+    .footer__container {
+        display: flex;
+        align-items: baseline;
+    }
+    
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer__container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .footer__input {
+        width: 450px
+    }
+}
+
+
+
+// desktop
+
+@media screen and (min-width:1200px) {
+    .footer__address-item:not(:last-child) {
+        margin-bottom: 5px; 
+        }
+    .footer__social {
+        margin-left: 86px;
+    } 
+    .footer__form {
+        margin-left: auto;
+    }
+    .footer__input {
+        width: 358px;
+    }
+    .footer__form-button {
+        margin-left: 12px;
+    }
+    
+}
+
+
+
 
 
 // .footer {
