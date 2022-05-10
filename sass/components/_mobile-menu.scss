@@ -33,7 +33,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    overflow: hidden;
     overflow: auto;
     opacity: 0;
     background-color: $main-title-color;
@@ -50,12 +50,14 @@
 .mobile-menu__container {
     @extend %container;
     position: relative;
-    padding: 48px 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 48px 0px 48px 40px;
 }
 .mobile-menu__nav-list {
     list-style: none;
-    padding-left: 40px;
-    margin-bottom: 302px;
+    margin-bottom: auto;
 }
 .mobile-menu__nav-item {
     margin-bottom: 32px;
@@ -84,7 +86,6 @@
 
 .mobile-menu__contacts-list {
     @extend %list;
-    padding-left: 40px;
     margin-bottom: 64px;
 }
 .mobile-menu__contacts-item {
@@ -110,10 +111,8 @@
 
 .mobile-menu__social-list {
     @extend %list;
-    padding-left: 40px;
     display: flex;
     flex-wrap: wrap;
-    
 }
 .mobile-menu__social-item {
     margin-right: 10px;

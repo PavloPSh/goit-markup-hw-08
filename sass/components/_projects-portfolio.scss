@@ -19,7 +19,7 @@
         1px 4px 6px rgba(0, 0, 0, 0.16);
     }
 }
-@media screen and (max-width:1199px) {
+@media screen and (max-width:1199.98px) {
     .projects__card {
         margin-bottom: 30px;
         &:last-child{
@@ -81,7 +81,9 @@
     line-height: 1.55;
     letter-spacing: 0.03em;
     color: $main-title-color;
-    width: 402px;
+    width: 100%;
+    padding: 0 24px;
+    overflow: visible;
     opacity: 0;
     .projects__link-img:hover &,
     .projects__link-img:focus & {
@@ -100,19 +102,26 @@
     }
     .projects__text {
         width: 354px;
-        height: 146px;
+        flex-grow: 1;
     }
     .projects__overlay-text {
         width: 306px;
     }
 }
-@media screen and (min-width:768px) and (max-width:1199px){
+@media screen and (min-width:768px) and (max-width:1199.98px){
     .projects__card {
         margin-right: 30px;
         &:nth-child(2n){
         margin-right: 0;
         }
+        display: flex;
     }
+    .projects__link-img {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
 }
 
 

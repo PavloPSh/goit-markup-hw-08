@@ -9,10 +9,16 @@
 .footer__container {
     @extend %container;
 }
-.footer__links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+@media screen and (max-width: 1199.98px) {
+    .footer__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__address-link {
+        text-align: center;
+    }
 }
 
 .footer__address-list {
@@ -35,7 +41,6 @@
 .footer__address-link {
     @extend %link;
     display: block;
-    text-align: center;
     font-style: normal;
     line-height: 1.71;
     color: $footer-contacts-color;
@@ -46,7 +51,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
     .footer__social {
         margin-top: 60px;
     }
@@ -61,7 +66,7 @@
     text-transform: uppercase;
     color: $main-title-color;
     margin-bottom: 20px;
-    @media screen and (max-width:1199px) {
+    @media screen and (max-width:1199.98px) {
         text-align: center;
     }
 }
@@ -75,6 +80,9 @@
 .footer__social-item {
     width: 44px;
     height: 44px;
+    &:not(:first-child){
+        margin-left: 10px;
+    }
 }
 
 .footer__social-link {
@@ -102,7 +110,7 @@
 }
 
 .footer__form {
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1199.98px) {
         margin-top: 60px;
     }
 }
@@ -115,14 +123,14 @@
     text-transform: uppercase;
     color: $main-title-color;
     margin-bottom: 20px;
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1199.98px) {
         text-align: center;
     }
 }
 
 .footer__form-block {
     display: flex;
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1199.98px) {
         flex-direction: column;
         align-items: center;
     }
@@ -142,7 +150,7 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1199.98px) {
         margin-bottom: 20px;
     }
 }
@@ -182,7 +190,7 @@
     }
     
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
     .footer__container {
         flex-wrap: wrap;
         justify-content: space-around;
@@ -212,6 +220,7 @@
     .footer__form-button {
         margin-left: 12px;
     }
+    
     
 }
 

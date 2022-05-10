@@ -30,7 +30,7 @@
     
     
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
     .main-team__item {
         &:not(:last-child) {
             margin-bottom: 30px;
@@ -89,6 +89,9 @@
 .main-team__social-icon {
     fill: currentColor;
 }
+.main-team__social-item:not(:first-child) {
+        margin-left: 10px;
+    }
 
 
 
@@ -101,7 +104,7 @@
         
     }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
     .main-team__list {
         flex-wrap: wrap;
     }

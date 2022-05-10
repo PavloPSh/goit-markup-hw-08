@@ -27,7 +27,7 @@
     line-height: 16px;
     text-transform: uppercase;
     margin-bottom: 10px;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
         text-align: center;
     }
 }
@@ -35,7 +35,7 @@
     line-height: 25px;
     color: $regular-text-color;
 }
-@media screen and (max-width:1199px) {
+@media screen and (max-width:1199.98px) {
     .second-main__item:not(:last-child){
         margin-bottom: 30px;
     }
@@ -65,7 +65,7 @@
         width: 354px;
     }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
     .second-main__item {
         margin-bottom: 30px;
 

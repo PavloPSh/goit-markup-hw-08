@@ -6,7 +6,11 @@
     height: auto;
     margin: 0 auto;
     background-color: #C4C4C4;
-    background-image: url(../images/mob-main-bg.jpg);
+    background-image:
+        linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 57, 58, 0.4)),
+            url(../images/mob-main-bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -14,7 +18,12 @@
     @media  (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-        background-image: url(../images/mob-main-bg@2x.jpg)
+        
+        background-image: 
+        linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 57, 58, 0.4)), 
+            url(../images/mob-main-bg@2x.jpg)
     }
 }
 .main-section__title {
@@ -48,11 +57,19 @@
 
 @media screen and (min-width:481px) and (max-width: 768px) {
     .main-section {
-        background-image: url(../images/tab-main-bg.jpg);
+        background-image: 
+        linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 57, 58, 0.4)),
+        url(../images/tab-main-bg.jpg);
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: url(../images/tab-main-bg@2x.jpg);
+                background-image: 
+                linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 57, 58, 0.4)),
+                url(../images/tab-main-bg@2x.jpg);
         }
         
     }
@@ -64,11 +81,19 @@
 
 @media screen and (min-width:769px) {
     .main-section {
-        background-image: url(../images/desk-main-bg.jpg);
+        background-image:
+        linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 57, 58, 0.4)),
+        url(../images/desk-main-bg.jpg);
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: url(../images/desk-main-bg@2x.jpg);
+                background-image: 
+                linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 57, 58, 0.4)),
+                url(../images/desk-main-bg@2x.jpg);
         }
     }
 }
@@ -80,6 +105,9 @@
     .main-section__title {
         font-size: 44px;
         line-height: 1.36;
+    }
+    .main-section {
+        max-width: 1600px;
     }
 }
 
